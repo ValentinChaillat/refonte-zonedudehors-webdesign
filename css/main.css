@@ -1,0 +1,360 @@
+
+header{
+  left: 10px;
+  position: fixed;
+
+
+}
+body{
+  margin: 10px 100px;
+  color: black;
+  overflow-x: hidden;
+
+
+}
+footer{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  padding: 0px 100px;
+  bottom:-10px;
+  left: -100px;
+  margin-top: 180px;
+  background-color: #5B5B5B;
+  height: 300px;
+  box-shadow: 0px 4px 250px rgba(0, 0, 0, 1);
+}
+
+/*--------------------------NavBar--------------------------------------------*/
+
+
+.menu-toggle .burger-breads span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #545454;
+    z-index: 10;
+
+}
+.menu-close .burger-breads span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 10;
+    transform: rotate(45deg) translate(-2px,1px);
+    background: #EAEAEA;
+}
+.menu-close .burger-breads span:nth-child(2){
+    transform: rotate(135deg) translate(-6px, 9px);
+    }
+.menu-close .burger-breads span:nth-child(3){
+    opacity: 0;
+}
+.menu-toggle{
+    display: inline-block;
+    padding: 3px;
+}
+.main-menu{
+    left: -210px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 999;
+    transition:  0.3s ease;
+}
+.main-menu:target{
+    left: 0;
+    outline: none;
+
+}
+.main-menu:target + .backdrop{
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, .6);
+    cursor: default;
+}
+.main-menu ul{
+    margin: 0;
+    padding-top: 60px;
+    width: 200px;
+    background-color: #545454;
+    min-height: 100%;
+    border-right: 4px solid #FED555;
+    outline: 4px solid #286183;
+
+}
+.main-menu a {
+
+    padding: 20px 0px;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+
+  }
+  nav ul li{
+    border-bottom: 1px solid white;
+  }
+  nav ul li:nth-child(1){
+    border-top: 1px white solid;
+  }
+
+  nav ul li:hover:nth-child(1){
+    background-color: #1C1C1C;
+  }
+  nav ul li:hover:nth-child(2){
+    background-color: #393939;
+  }
+  nav ul li:hover:nth-child(3){
+    background-color: #5B5B5B;
+  }
+  nav ul li:hover:nth-child(4){
+    background-color: #7F7F7F;
+  }
+  nav ul li:hover:nth-child(5){
+    background-color: #C6C6C6;
+  }
+
+  .main-menu .menu-close {
+    position: absolute;
+    left: 15px;
+    top:10px;
+  }
+
+/*------------------------Bouton retour-------------------------------------------*/
+
+.bouton{
+  width: 127px;
+  height: 43px;
+  background: #286183;
+  box-shadow: 5px 5px #FED555;
+  position: inherit;
+  transition: 0.3s;
+}
+.bouton:hover{
+  margin-top: 5px;
+  margin-left: 5px;
+  box-shadow: 0px 0px #FED555;
+}
+a{
+  text-decoration: none;
+}
+.bouton p{
+  padding-top: 7px;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+.bouton img{
+  margin:8px;
+  float: left;
+}
+
+/*-------------------Titre----------------------------------------------------*/
+
+h1{
+padding-top: 50px;
+font-size: 96px;
+text-align: center;
+color: #286183;
+}
+
+/*-------------------catégorie à l'honneur----------------------------------------------------*/
+
+.bloc1{
+  margin-top: 84px;
+  position:inherit;
+  z-index: 1;
+}
+h2{
+  font-weight: bold;
+  font-size: 48px;
+  color: #286183;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #C1C1C1;
+}
+
+
+.bloc1 div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloc1 div a article{
+  margin-top: 20px;
+  width: 110px;
+  height: 110px;
+  background: #FED555;
+  text-align: center;
+  position:inherit;
+  box-shadow: 5px 5px #286183;
+  color: black;
+}
+.bloc1 div a article.bgcolor{
+  background: #286183;
+  margin-top: 25px;
+  margin-left: 5px;
+  box-shadow: -5px -5px #FED555;
+
+}
+
+.icone{
+ margin-top: 5px;
+}
+/*--------------- animation------------------ */
+.bloc1 div article:hover{
+  margin-top: 25px;
+  margin-left: 5px;
+  box-shadow: 0px 0px #286183;
+  transition: 0.3s;
+}
+
+/*-------------------rentrée litéraire 2020----------------------------------------------------*/
+
+.bloc2{
+  margin-top: 100px;
+}
+.container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+h3{
+  font-weight: bold;
+  font-size: 2em;
+  color: #286183;
+}
+.container article p{
+  margin: 5px 0px;
+  font-size: 1em;
+  color: #286183;
+}
+
+
+.container article a div p{
+  color: black;
+}
+/* bouton plus d'info */
+.bouton2{
+  width: 80%;
+  height: 43px;
+  background: #286183;
+  box-shadow: 5px 5px #FED555;
+  transition: 0.3s;
+}
+.bloc2 div a div p{
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  padding-top: 10px;
+}
+.bouton2:hover{
+  margin-top: 5px;
+  margin-left: 5px;
+  box-shadow: 0px 0px #FED555;
+}
+
+
+/* ---------------------------footer ----------------------------*/
+footer{
+  display: flex;
+}
+.contact{
+  color: white;
+  width: 30%;
+  height: 100%;
+}
+.contact p{
+  padding: 10px;
+}
+h4{
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.horraire{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+.horraire p{
+  padding: 7px;
+}
+.lundi{
+  margin-left: -69px;
+}
+
+.map{
+  margin: 20px;
+  width: 400px;
+  height: auto;
+  box-shadow: 5px 5px #FED555;
+}
+
+/*-------------------Page catégorie----------------------------------------------------*/
+
+.bloc3{
+  display: none;
+}
+.bloc3 div a div p{
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  padding-top: 10px;
+}
+
+.bloc3hide{
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------Page produit----------------------------------------------------*/
